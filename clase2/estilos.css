@@ -1,0 +1,12 @@
+.error { color: red; }
+
+input {
+	margin-right: 100%;
+	clear: both;
+}
+
+
+input[type="radio"] {
+	margin-right: 10px !important;
+	clear: none !important;
+}
