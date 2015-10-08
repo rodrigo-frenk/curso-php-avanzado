@@ -1,8 +1,8 @@
 <?php
-add_action( 'init', 'wpdocs_codex_Reporte_init' );
+add_action( 'init', 'registrar_reporte' );
 
 
-function wpdocs_codex_Reporte_init() {
+function registrar_reporte() {
     $labels = array(
         'name'               => _x( 'Reportes', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Reporte', 'post type singular name', 'your-plugin-textdomain' ),
