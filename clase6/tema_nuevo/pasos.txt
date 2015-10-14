@@ -1,0 +1,36 @@
+1. Primer paso es descargar y extraer Foundation en un folder de trabajo
+2. Renombrar el directorio Foundation al nombre de nuestro tema, p. ej. 'tema_nuevo'
+
+3. Crear link simbólico en la carpeta 'themes' a nuestro folder recién renombrado
+
+cd /ruta/a/wordpress/wp-content/themes/
+ln -s /ruta/a/tema_nuevo/ tema_nuevo
+
+
+4. Abrir directorio de tema nuevo en editor de texto
+
+5. Crear archivo 'style.css' e añadir informaciòn sobre tema
+
+/*
+Theme Name: Tema Nuevo
+Author: furenku
+*/
+
+
+6. Crear archivo functions.php
+
+7. Renombrar index.html a index.php
+
+8. Configurar rutas a recursos css y js
+
+<?php echo get_stylesheet_directory_uri(); ?>/js
+ó
+<?php echo get_stylesheet_directory_uri(); ?>/css
+
+
+
+9. Eliminar código HTML de ejemplo (entre línea 11 y 167)
+
+10.  Añadir siguiente lìnea de código antes del cierre de </head>:
+
+<?php wp_head(); ?>

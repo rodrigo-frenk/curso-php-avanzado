@@ -1,0 +1,22 @@
+/*
+Theme Name: Tema Nuevo
+Author: furenku
+*/
+
+
+div, li {
+	border: 1px dotted #ddf; 
+	list-style: none;
+	padding: 20px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+#persona_completa .imagen {
+	width: 150px;
+	height: auto;
+}

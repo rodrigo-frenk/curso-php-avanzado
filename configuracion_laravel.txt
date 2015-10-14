@@ -1,0 +1,120 @@
+0. Verificar si versión de PHP es mayor o igual a 5.5
+
+php -v
+
+Si no, instalar versión actual de PHP : (http://php-osx.liip.ch/)
+
+curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6
+cd /usr/bin
+mv php php.org
+ln -s /usr/local/php5/bin/php
+
+
+
+0. Instalar composer
+
+https://getcomposer.org/
+
+
+1. Instalar VirtualBox
+
+https://www.virtualbox.org/wiki/Downloads
+
+
+2. Instalar vagrant ( vagrantup.com )
+
+? cd /usr/bin/
+? ln -s /usr/local/bin/vagrant 
+
+3. Agregar maquina virtual Homestead
+
+vagrant box add laravel/homestead
+
+
+4. navegar a directorio base
+mac:
+cd ~
+
+
+5. git clone https://github.com/laravel/homestead.git Homestead
+
+
+6. Entrar a dir. de Homestead recién creado
+
+cd Homestead
+
+
+7. Inicializar homestead (se crea automaticamente archivo Homestead.yaml)
+
+bash init.sh
+
+
+8. Generar Llave ssh
+
+ssh-keygen -t rsa -C "you@homestead"
+
+
+
+
+9. Editar Homestead.yaml
+
+nano ../.homestead/Homestead.yaml
+
+Verificar que la siguiente línea coincida con la dirección de nuestra llave pública ubicada en la ruta ~/.ssh/id_rsa.pub
+
+authorize: ~/.ssh/id_rsa.pub
+
+
+de otro modo, volver al paso 7
+
+
+
+
+
+10. Mappear directorio de trabajo de Computadora a Vagrant
+
+folders:
+    - map: /Users/mactrainee6/Desktop/CursoLaravel
+      to: /home/vagrant/CursoLaravel
+
+
+11. Configurar sitio
+
+sites:
+    - map: cursolaravel.app
+      to: /home/vagrant/CursoLaravel/laravel/public
+
+
+12. Crear Directorio de Laravel
+
+mkdir ~/Desktop/CursoLaravel
+cd ~/Desktop/CursoLaravel
+
+composer create-project laravel/laravel --prefer-dist
+
+
+13. Inicializar máquina virtual
+cd ~/Homestead
+vagrant up
+
+
+14. añadir IP definida en Homestead.yaml
+
+
+
+sudo nano /etc/hosts
+
+
+Añadir siguiente línea hasta el final:
+ 
+192.168.10.10 cursolaravel.app
+
+
+
+
+
+
+15. Navegar a cursolaravel.app	
+
+
+
