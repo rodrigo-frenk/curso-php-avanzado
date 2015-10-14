@@ -1,0 +1,27 @@
+/*
+
+Theme Name: tema hijo
+Template: twentyfifteen
+
+*/
+
+#reportes {
+	margin-bottom: 100px;
+}
+
+.reporte {
+	width: 200px;
+	float: left;
+	display: inline-block;
+}
+
+
+.reporte .imagen {
+	padding: 20px;
+
+	outline: 1px solid black;
+}
+.reporte img {
+	max-width:160px;
+	height: auto;
+}
