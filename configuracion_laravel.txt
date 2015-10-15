@@ -58,7 +58,7 @@ ssh-keygen -t rsa -C "you@homestead"
 
 9. Editar Homestead.yaml
 
-nano ../.homestead/Homestead.yaml
+nano ~/.homestead/Homestead.yaml
 
 Verificar que la siguiente línea coincida con la dirección de nuestra llave pública ubicada en la ruta ~/.ssh/id_rsa.pub
 
