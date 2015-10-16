@@ -11,7 +11,7 @@ class CreateUsersTable extends Migration
      * @return void
      */
     public function up()
-    {
+    {   
         Schema::table('users', function( $table ){
             
             $table -> create();
@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-//            $table->rememberToken();
+            $table->rememberToken();
 
             $table->timestamps();
         });

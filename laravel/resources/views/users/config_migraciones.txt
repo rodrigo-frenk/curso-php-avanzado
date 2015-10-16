@@ -1,0 +1,7 @@
+ php artisan make:seeder UserTableSeeder
+
+
+ ir a database/seeds
+
+
+ folder database/factories

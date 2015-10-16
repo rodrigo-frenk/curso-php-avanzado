@@ -33,17 +33,5 @@ Route::get('/', function () {
 });
 
 
-Route::controller('users','UsersController');
-
-Route::get('/create_user', function () {
-
-    return view('crearusuario');
-
-});
-
-Route::post('/create_user', array('as'=>'create_user','uses'=>'UsersController@create'));
-
-
-
-
+Route::resource( 'users' , 'UsersController' );
 

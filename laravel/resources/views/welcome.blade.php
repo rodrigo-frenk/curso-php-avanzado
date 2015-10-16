@@ -38,14 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Bienvenido, {{ $nombre }}</div>
-
-
-                <!-- #ejemplo -->
-                <div id="ejemplo">
-                    La hora exacta es: {{ $hora }}
-                </div>
-
+                <div class="title">Laravel 5</div>
 
             </div>
         </div>
